@@ -13,6 +13,7 @@ import javax.persistence.*;
 public class Question {
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
     @ManyToOne
     @JoinColumn(name = "movie1_id", referencedColumnName = "id")
@@ -24,8 +25,8 @@ public class Question {
     @JoinColumn(name = "game_id" , referencedColumnName = "id")
     private Game game ;
     @ManyToOne
-    @JoinColumn(name = "result_id", referencedColumnName = "id")
-    private Movies result;
+    @JoinColumn(name = "response", referencedColumnName = "id")
+    private Movies response;
 
 
 }

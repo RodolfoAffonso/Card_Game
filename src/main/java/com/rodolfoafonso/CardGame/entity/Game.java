@@ -16,6 +16,6 @@ public class Game {
     @Column(name = "active")
     private Boolean active ;
     @ManyToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "username")
+    @JoinColumn(name = "user_id", referencedColumnName = "user_id")
     private User user;
 }
