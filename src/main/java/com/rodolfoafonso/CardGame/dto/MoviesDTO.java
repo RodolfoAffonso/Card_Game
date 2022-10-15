@@ -1,17 +1,16 @@
 package com.rodolfoafonso.CardGame.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
+import lombok.Getter;
+
+
+
 @Getter
 public class MoviesDTO {
 
-    private Long id ;
+    private String id ;
     private String title ;
-    private Double ranking ;
-    private Long vote ;
+    private Double imDbRating ;
+    private Long imDbRatingCount ;
 
 }

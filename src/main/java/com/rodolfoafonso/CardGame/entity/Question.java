@@ -17,16 +17,16 @@ public class Question {
     private Long id ;
     @ManyToOne
     @JoinColumn(name = "movie1_id", referencedColumnName = "id")
-    private Movies movie1;
+    private Movie movie1;
     @ManyToOne
     @JoinColumn(name = "movie2_id", referencedColumnName = "id")
-    private Movies movie2;
+    private Movie movie2;
     @ManyToOne
     @JoinColumn(name = "game_id" , referencedColumnName = "id")
     private Game game ;
     @ManyToOne
     @JoinColumn(name = "response", referencedColumnName = "id")
-    private Movies response;
+    private Movie response;
 
 
 }

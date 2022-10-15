@@ -1,7 +1,7 @@
 package com.rodolfoafonso.CardGame.dto;
 
 import com.rodolfoafonso.CardGame.entity.Game;
-import com.rodolfoafonso.CardGame.entity.Movies;
+import com.rodolfoafonso.CardGame.entity.Movie;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class QuestionDTO {
     private Long id ;
-    private Movies movie1;
-    private Movies movie2;
+    private Movie movie1;
+    private Movie movie2;
     private Game game ;
-    private Movies result;
+    private Movie result;
 
 }
